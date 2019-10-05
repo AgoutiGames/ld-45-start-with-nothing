@@ -6,5 +6,8 @@
    <property name="ACTOR_NAME" value="Samuel"/>
    <property name="DIRECTION" value="RIGHT"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="106" y="2" width="50" height="251"/>
+  </objectgroup>
  </tile>
 </tileset>

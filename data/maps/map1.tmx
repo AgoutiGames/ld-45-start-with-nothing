@@ -15,19 +15,19 @@
  <tileset firstgid="523" source="../actors/player/PlayerFallRight.tsx"/>
  <tileset firstgid="587" source="../actors/player/PlayerDieRight.tsx"/>
  <tileset firstgid="617" source="../actors/player/PlayerDieLeft.tsx"/>
- <layer name="DontThrowOutMyActorTilesets!" width="90" height="15">
+ <layer name="DontThrowOutMyActorTilesets!" width="90" height="15" visible="0">
   <data encoding="base64" compression="zlib">
    eJztzrENwCAAxMAPLZMldGzBLIxGx0TxEJEo4pPcO5Gkb930UKdJm+qVNJq0qJZkUCtHVyVJkiRJ0k+9qtwEuA==
   </data>
  </layer>
- <objectgroup name="MainActors">
-  <object id="1" name="PLAYER" gid="72" x="243" y="457" width="256" height="256"/>
- </objectgroup>
  <layer name="Flames" width="90" height="15" offsetx="0" offsety="-51">
   <data encoding="base64" compression="zlib">
    eJzt0DENAAAIBLGXgH+1TAwoICGtgsslAMCo64DHvL3lPwAAbA1xtgAx
   </data>
  </layer>
+ <objectgroup name="MainActors">
+  <object id="1" name="PLAYER" gid="72" x="243" y="457" width="256" height="256"/>
+ </objectgroup>
  <layer name="GroundLayer" width="90" height="15">
   <data encoding="base64" compression="zlib">
    eJztlEEKgDAQxAatVsX/v9cV6UWKFOlasAnkvoRhJfiCwRxbH9EB0VxaH9EBZ+dV7NqbYO7mJHbtSWo7i117ktpuun4I/9qHmJFd1yfXmd71eep8743vLemMiIj4Vw9i9Q40
