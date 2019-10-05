@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="1">
+ <tileset firstgid="1" source="../tilesets/Stone.tsx"/>
+ <layer name="GroundLayer" width="90" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztkkEKgDAMBIM9RP//4ba3IEFEkhbMDMx9GVYEVnAM2+4RBdDhuXtEAWbnS/h1Nmrk13nYzvw6D3Xk1/F4nfl1PF5nesfz1PneG7/7pjMiIuJf7cVJDjs=
+  </data>
+ </layer>
+</map>
