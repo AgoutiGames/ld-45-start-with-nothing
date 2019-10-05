@@ -5,6 +5,8 @@
   <properties>
    <property name="ACTOR_NAME" value="Samuel"/>
    <property name="DIRECTION" value="RIGHT"/>
+   <property name="ON_ALWAYS" value="Physics"/>
+   <property name="ON_COLLISION" value="CondDeath"/>
   </properties>
   <objectgroup draworder="index">
    <object id="1" x="106" y="2" width="50" height="251"/>

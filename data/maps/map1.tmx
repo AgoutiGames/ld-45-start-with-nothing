@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="3">
+ <properties>
+  <property name="EVENTS1" type="file" value="../actors/player/PlayerEvents.tsx"/>
+  <property name="KEYS1" type="file" value="../actors/player/PlayerControl.tsx"/>
+ </properties>
  <tileset firstgid="1" source="../tilesets/Stone.tsx"/>
  <tileset firstgid="16" source="../tilesets/Flame.tsx"/>
  <tileset firstgid="72" source="../actors/player/PlayerSymbolic.tsx"/>

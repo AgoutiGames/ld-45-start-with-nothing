@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="PlayerDieLeft" tilewidth="256" tileheight="256" tilecount="30" columns="6">
  <image source="dyingLeft.png" width="1536" height="1280"/>
- <tile id="0">
+ <tile id="0" type="ACTOR_ANIMATION">
+  <properties>
+   <property name="ACTOR_NAME" value="Samuel"/>
+   <property name="ANIMATION_TYPE" value="DIE"/>
+   <property name="DIRECTION" value="LEFT"/>
+  </properties>
   <animation>
    <frame tileid="5" duration="41"/>
    <frame tileid="4" duration="41"/>
