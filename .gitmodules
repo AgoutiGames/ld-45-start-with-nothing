@@ -1,0 +1,4 @@
+[submodule "engine"]
+	path = engine
+	url = https://github.com/AgoutiGames/RawSalmonEngine.git
+	branch = ld-45
