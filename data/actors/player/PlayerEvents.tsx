@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="PlayerEvents" tilewidth="60" tileheight="60" tilecount="100" columns="10">
  <image source="../../tilesets/symbol_numbers.png" width="600" height="600"/>
+ <tile id="10" type="MeSetVar">
+  <properties>
+   <property name="NAME" value="LookRight"/>
+   <property name="VALUE" type="bool" value="true"/>
+   <property name="VAL_NAME" value="LOOK_RIGHT"/>
+  </properties>
+ </tile>
+ <tile id="11" type="MeSetVar">
+  <properties>
+   <property name="NAME" value="LookLeft"/>
+   <property name="VALUE" type="bool" value="false"/>
+   <property name="VAL_NAME" value="LOOK_RIGHT"/>
+  </properties>
+ </tile>
+ <tile id="12" type="AteMath">
+  <properties>
+   <property name="&lt;" type="bool" value="true"/>
+   <property name="==" type="bool" value="false"/>
+   <property name="&gt;" type="bool" value="false"/>
+   <property name="NAME" value="CheckLookLeft"/>
+   <property name="VAL1" value="*__XSPEED"/>
+   <property name="VAL2" type="float" value="-20"/>
+  </properties>
+ </tile>
+ <tile id="13" type="AeWait">
+  <properties>
+   <property name="NAME" value="WaitDeath"/>
+   <property name="TIME" type="float" value="3"/>
+  </properties>
+ </tile>
+ <tile id="14" type="AteMath">
+  <properties>
+   <property name="==" type="bool" value="false"/>
+   <property name="&gt;" type="bool" value="true"/>
+   <property name="NAME" value="CheckLookRight"/>
+   <property name="VAL1" value="*__XSPEED"/>
+   <property name="VAL2" type="float" value="20"/>
+  </properties>
+ </tile>
+ <tile id="15" type="AteSwitch">
+  <properties>
+   <property name="1" value="CheckLookLeft"/>
+   <property name="NAME" value="CondLookLeft"/>
+   <property name="SUCCESS" value="LookLeft"/>
+  </properties>
+ </tile>
+ <tile id="16" type="AteSwitch">
+  <properties>
+   <property name="1" value="CheckLookRight"/>
+   <property name="NAME" value="CondLookRight"/>
+   <property name="SUCCESS" value="LookRight"/>
+  </properties>
+ </tile>
+ <tile id="17" type="AeMulti">
+  <properties>
+   <property name="1" value="CondLookLeft"/>
+   <property name="2" value="CondLookRight"/>
+   <property name="NAME" value="CondLook"/>
+  </properties>
+ </tile>
  <tile id="20" type="AteCollision">
   <properties>
    <property name="NAME" value="CollideDeadly"/>
@@ -25,7 +85,8 @@
  <tile id="23" type="AeMulti">
   <properties>
    <property name="1" value="DieAnim"/>
-   <property name="2" value="RestartMap"/>
+   <property name="2" value="WaitDeath"/>
+   <property name="3" value="RestartMap"/>
    <property name="NAME" value="DieEvent"/>
   </properties>
  </tile>
@@ -202,6 +263,11 @@
    <property name="SUCCESS" value="AccRightGround"/>
   </properties>
  </tile>
+ <tile id="56" type="AeMulti">
+  <properties>
+   <property name="NAME" value="MoveLeft"/>
+  </properties>
+ </tile>
  <tile id="60" type="AteMath">
   <properties>
    <property name="&lt;" type="bool" value="true"/>
@@ -330,17 +396,28 @@
    <property name="3" value="Move"/>
    <property name="4" value="CalcSpeed"/>
    <property name="5" value="CondCompleteAnim"/>
+   <property name="6" value="CondLook"/>
    <property name="NAME" value="Physics"/>
   </properties>
  </tile>
  <tile id="90" type="AeSpawnActor">
   <properties>
-   <property name="ACTOR_NAME" value="Samuel"/>
+   <property name="ACTOR_NAME" value="SingleShot1"/>
    <property name="LAYER_NAME" value="MainActors"/>
-   <property name="NAME" value="SpawnDouble"/>
-   <property name="SPAWN_NAME" value="MiniSamuel"/>
-   <property name="X_POS" type="int" value="200"/>
-   <property name="Y_POS" type="int" value="-40"/>
+   <property name="NAME" value="Shot1"/>
+   <property name="SPAWN_NAME" value="Shot"/>
+   <property name="X_POS" type="int" value="65"/>
+   <property name="Y_POS" type="int" value="-110"/>
+  </properties>
+ </tile>
+ <tile id="91" type="AeSpawnActor">
+  <properties>
+   <property name="ACTOR_NAME" value="ArcShot1"/>
+   <property name="LAYER_NAME" value="MainActors"/>
+   <property name="NAME" value="Shot2"/>
+   <property name="SPAWN_NAME" value="Shot"/>
+   <property name="X_POS" type="int" value="65"/>
+   <property name="Y_POS" type="int" value="-110"/>
   </properties>
  </tile>
 </tileset>

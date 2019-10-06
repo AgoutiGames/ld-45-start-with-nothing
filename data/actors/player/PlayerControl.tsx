@@ -3,11 +3,15 @@
  <image source="../../tilesets/keyboard.png" width="720" height="300"/>
  <tile id="0" type="KEY_MAPPING">
   <properties>
+   <property name="DOWN" type="bool" value="true"/>
+   <property name="EVENT" value="Shot1"/>
    <property name="KEYPRESS" value="1"/>
   </properties>
  </tile>
  <tile id="1" type="KEY_MAPPING">
   <properties>
+   <property name="DOWN" type="bool" value="true"/>
+   <property name="EVENT" value="Shot2"/>
    <property name="KEYPRESS" value="2"/>
   </properties>
  </tile>
@@ -212,8 +216,7 @@
  </tile>
  <tile id="41" type="KEY_MAPPING">
   <properties>
-   <property name="DOWN" type="bool" value="true"/>
-   <property name="EVENT" value="SpawnDouble"/>
+   <property name="EVENT" value=""/>
    <property name="KEYPRESS" value="b"/>
   </properties>
  </tile>

@@ -3,6 +3,7 @@
  <properties>
   <property name="EVENTS1" type="file" value="../actors/player/PlayerEvents.tsx"/>
   <property name="EVENTS2" type="file" value="../actors/tentacleMonster/MonsterEvents.tsx"/>
+  <property name="EVENTS3" type="file" value="../actors/Shot/SingleShotEvents.tsx"/>
   <property name="KEYS1" type="file" value="../actors/player/PlayerControl.tsx"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/Stone.tsx"/>
@@ -26,9 +27,12 @@
  <tileset firstgid="677" source="../actors/tentacleMonster/MonsterSymbolic.tsx"/>
  <tileset firstgid="678" source="../actors/player/PlayerJumpUpLeft.tsx"/>
  <tileset firstgid="718" source="../actors/player/PlayerJumpUpRight.tsx"/>
+ <tileset firstgid="758" source="../tilesets/Spikes.tsx"/>
+ <tileset firstgid="778" source="../actors/Shot/SingleShot.tsx"/>
+ <tileset firstgid="798" source="../actors/Shot/ArcShot.tsx"/>
  <layer name="DontThrowOutMyActorTilesets!" width="90" height="15" visible="0" locked="1">
   <data encoding="base64" compression="zlib">
-   eJztzLENwCAQBMHjM4qhEIvEbbgSi0bohcRt0IZPcuCEkHBH2uSlewkA9iohVdfd407fmhsuJ+lwzU030re54t/fsXgKAAAAAACw0Qs//Qcb
+   eJztzrEJgEAQRNG5vUiLsAMLERPbsBK5RuzlEtuwDQcMTIxE0OA/+MnCLisBeKLNUpe//uKf+pBGt7rNTZ4VV12TpMEVt7uazp05rv0lbo4CAAAAAAC86AB1KAdJ
   </data>
  </layer>
  <objectgroup name="MainActors">
@@ -37,7 +41,7 @@
  </objectgroup>
  <layer name="Flames" width="90" height="15" offsetx="0" offsety="-51">
   <data encoding="base64" compression="zlib">
-   eJzt0cEJADAIA0BHcP9ppRv0F5E7yD8kVcDT6QLH2HMPXwAAQE5/BMgYNeMAwQ==
+   eJzt0cEJACAMA8DSCdx/UP2KGwg+qnIH+YckAlhadYHP2PMevgAAgDptI3CqZ8TI6hbvmY/RArI=
   </data>
  </layer>
  <layer name="GroundLayer" width="90" height="15">

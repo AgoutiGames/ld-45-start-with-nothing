@@ -5,7 +5,10 @@
   <properties>
    <property name="ACTOR_NAME" value="TentacleMonster"/>
    <property name="DIRECTION" value="LEFT"/>
+   <property name="LATE_POLLING" type="bool" value="false"/>
+   <property name="ON_ACTIVATION" value="SetUpMonsterHp"/>
    <property name="ON_ALWAYS" value="MonsterAnimate"/>
+   <property name="ON_COLLISION" value="MonsterCollision"/>
   </properties>
   <objectgroup draworder="index">
    <object id="1" name="Deadly" x="141.333" y="34.6667" width="128" height="268"/>
