@@ -4,14 +4,14 @@
  <tile id="0" type="KEY_MAPPING">
   <properties>
    <property name="DOWN" type="bool" value="true"/>
-   <property name="EVENT" value="Shot1"/>
+   <property name="EVENT" value="CondShot1"/>
    <property name="KEYPRESS" value="1"/>
   </properties>
  </tile>
  <tile id="1" type="KEY_MAPPING">
   <properties>
    <property name="DOWN" type="bool" value="true"/>
-   <property name="EVENT" value="Shot2"/>
+   <property name="EVENT" value="CondShot2"/>
    <property name="KEYPRESS" value="2"/>
   </properties>
  </tile>
@@ -67,7 +67,9 @@
  </tile>
  <tile id="12" type="KEY_MAPPING">
   <properties>
-   <property name="KEYPRESS" value="x"/>
+   <property name="DOWN" type="bool" value="true"/>
+   <property name="EVENT" value="QuitGamePlayer"/>
+   <property name="KEYPRESS" value="Escape"/>
   </properties>
  </tile>
  <tile id="13" type="KEY_MAPPING">

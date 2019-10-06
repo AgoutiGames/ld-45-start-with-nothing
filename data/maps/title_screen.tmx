@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="1920" tileheight="1080" infinite="0" nextobjectid="6">
+ <properties>
+  <property name="EVENTS1" type="file" value="../tilesets/titleScreen/ButtonEvents.tsx"/>
+  <property name="ON_LOAD" value="TitleScreenMusic"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/titleScreen/title/title.tsx"/>
+ <tileset firstgid="29" source="../tilesets/titleScreen/Buttons.tsx"/>
+ <layer name="Bg" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgAAAACAAC
+  </data>
+ </layer>
+ <objectgroup name="Buttons">
+  <object id="3" name="PlayButton" gid="34" x="319.394" y="850.303" width="640" height="640"/>
+  <object id="5" name="QuitButton" gid="30" x="849.697" y="850.303" width="640" height="640"/>
+ </objectgroup>
+</map>

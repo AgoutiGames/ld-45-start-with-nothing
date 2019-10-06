@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="PlayerEvents" tilewidth="60" tileheight="60" tilecount="100" columns="10">
  <image source="../../tilesets/symbol_numbers.png" width="600" height="600"/>
+ <tile id="0" type="MeLayerState">
+  <properties>
+   <property name="LAYER_NAME" value="GameOverScreen"/>
+   <property name="NAME" value="GO1"/>
+   <property name="UNHIDE" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="1" type="MeLayerState">
+  <properties>
+   <property name="LAYER_NAME" value="GameOverButtons"/>
+   <property name="NAME" value="GO2"/>
+   <property name="UNHIDE" type="bool" value="true"/>
+   <property name="UNSUSPEND" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="2" type="MeLayerState">
+  <properties>
+   <property name="LAYER_NAME" value="MainActors"/>
+   <property name="NAME" value="GO3"/>
+   <property name="SUSPEND" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="3" type="AeMulti">
+  <properties>
+   <property name="1" value="GO1"/>
+   <property name="2" value="GO2"/>
+   <property name="3" value="GO3"/>
+   <property name="NAME" value="ShowGameOver"/>
+  </properties>
+ </tile>
+ <tile id="4" type="AeEraseThis">
+  <properties>
+   <property name="NAME" value="PlayerVanish"/>
+  </properties>
+ </tile>
  <tile id="10" type="MeSetVar">
   <properties>
    <property name="NAME" value="LookRight"/>
@@ -61,6 +96,12 @@
    <property name="NAME" value="CondLook"/>
   </properties>
  </tile>
+ <tile id="18" type="AeSound">
+  <properties>
+   <property name="NAME" value="DeathSound"/>
+   <property name="PATH" type="file" value="../../audio/playerDeathScream.ogg"/>
+  </properties>
+ </tile>
  <tile id="20" type="AteCollision">
   <properties>
    <property name="NAME" value="CollideDeadly"/>
@@ -74,6 +115,7 @@
    <property name="NAME" value="DieAnim"/>
    <property name="SIGNAL" value="STOP"/>
    <property name="SPEED" type="float" value="1.5"/>
+   <property name="STOP_ON_LAST_FRAME" type="bool" value="true"/>
   </properties>
  </tile>
  <tile id="22" type="GeChangeMap">
@@ -84,10 +126,12 @@
  </tile>
  <tile id="23" type="AeMulti">
   <properties>
-   <property name="1" value="DieAnim"/>
-   <property name="2" value="WaitDeath"/>
-   <property name="3" value="RestartMap"/>
+   <property name="1" value="DeathSound"/>
+   <property name="2" value="DieAnim"/>
+   <property name="3" value="WaitDeath"/>
+   <property name="4" value="ShowGameOver"/>
    <property name="NAME" value="DieEvent"/>
+   <property name="PRIORITY" value="HIGH"/>
   </properties>
  </tile>
  <tile id="24" type="AteSwitch">
@@ -418,6 +462,40 @@
    <property name="SPAWN_NAME" value="Shot"/>
    <property name="X_POS" type="int" value="65"/>
    <property name="Y_POS" type="int" value="-110"/>
+  </properties>
+ </tile>
+ <tile id="92" type="AteMath">
+  <properties>
+   <property name="NAME" value="Gem1Found"/>
+   <property name="VAL1" value="*GEM1"/>
+   <property name="VAL2" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="93" type="AteMath">
+  <properties>
+   <property name="NAME" value="Gem2Found"/>
+   <property name="VAL1" value="*GEM2"/>
+   <property name="VAL2" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="94" type="AteSwitch">
+  <properties>
+   <property name="1" value="Gem1Found"/>
+   <property name="NAME" value="CondShot1"/>
+   <property name="SUCCESS" value="Shot1"/>
+  </properties>
+ </tile>
+ <tile id="95" type="AteSwitch">
+  <properties>
+   <property name="1" value="Gem2Found"/>
+   <property name="NAME" value="CondShot2"/>
+   <property name="SUCCESS" value="Shot2"/>
+  </properties>
+ </tile>
+ <tile id="99" type="GeChangeMap">
+  <properties>
+   <property name="NAME" value="QuitGamePlayer"/>
+   <property name="PATH" type="file" value="../../maps/title_screen.tmx"/>
   </properties>
  </tile>
 </tileset>

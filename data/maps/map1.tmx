@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="4">
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="8">
  <properties>
   <property name="EVENTS1" type="file" value="../actors/player/PlayerEvents.tsx"/>
   <property name="EVENTS2" type="file" value="../actors/tentacleMonster/MonsterEvents.tsx"/>
   <property name="EVENTS3" type="file" value="../actors/Shot/SingleShotEvents.tsx"/>
+  <property name="EVENTS4" type="file" value="../tilesets/titleScreen/ButtonEvents.tsx"/>
+  <property name="EVENTS5" type="file" value="../tilesets/collectables/GemEvents.tsx"/>
   <property name="KEYS1" type="file" value="../actors/player/PlayerControl.tsx"/>
+  <property name="ON_LOAD" value="Map1Music"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/Stone.tsx"/>
  <tileset firstgid="16" source="../tilesets/Flame.tsx"/>
@@ -30,6 +33,26 @@
  <tileset firstgid="758" source="../tilesets/Spikes.tsx"/>
  <tileset firstgid="778" source="../actors/Shot/SingleShot.tsx"/>
  <tileset firstgid="798" source="../actors/Shot/ArcShot.tsx"/>
+ <tileset firstgid="818" source="../tilesets/titleScreen/Buttons.tsx"/>
+ <tileset firstgid="827" source="../tilesets/collectables/Gems.tsx"/>
+ <imagelayer name="BG3">
+  <image source="../tilesets/bgVF2.png" width="3000" height="1080"/>
+  <properties>
+   <property name="PARALLAX" type="bool" value="true"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="BG2">
+  <image source="../tilesets/bgF2.png" width="4500" height="1140"/>
+  <properties>
+   <property name="PARALLAX" type="bool" value="true"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="BG1">
+  <image source="../tilesets/bgN2.png" width="8000" height="1200"/>
+  <properties>
+   <property name="PARALLAX" type="bool" value="true"/>
+  </properties>
+ </imagelayer>
  <layer name="DontThrowOutMyActorTilesets!" width="90" height="15" visible="0" locked="1">
   <data encoding="base64" compression="zlib">
    eJztzrEJgEAQRNG5vUiLsAMLERPbsBK5RuzlEtuwDQcMTIxE0OA/+MnCLisBeKLNUpe//uKf+pBGt7rNTZ4VV12TpMEVt7uazp05rv0lbo4CAAAAAAC86AB1KAdJ
@@ -38,6 +61,8 @@
  <objectgroup name="MainActors">
   <object id="1" name="PLAYER" gid="72" x="2629.06" y="244.879" width="256" height="256"/>
   <object id="3" name="Paul" gid="677" x="4478" y="1230" width="384" height="384"/>
+  <object id="6" name="Gem1Collectible" gid="827" x="1744" y="1097.33" width="128" height="128"/>
+  <object id="7" name="Gem2Collectible" gid="828" x="5444" y="1212" width="128" height="128"/>
  </objectgroup>
  <layer name="Flames" width="90" height="15" offsetx="0" offsety="-51">
   <data encoding="base64" compression="zlib">
@@ -49,4 +74,28 @@
    eJztl+EOgyAMhLspc5vs/V93LErW1B4W5xJQLrk/GiF8HKUORDTs6Dstddt5jjO5D/bBrnH+K89H8DX4aeA8zmN4MFYv3h/RGs+esUA80V5onKVkvi3f1C6ez46m7L1omUFpR3q2LcxG+u6nn+c7ungmc9YbWclsW7MZ9/Ms+uXsavfbGWrAFq3xudBUE6I79q5xtmuNj2QZazG6GxtnXRo/nllUh1Fflqq58mwgd+Bb+dw6Xgm2sOK9h6Nlv2u5zz5MUr2hpQeX89T4/8PzjDKF1ptSzJyVcU7tqZGzxh2xTkme5Ry+aM+Rt4xdolHNRkyPtPYSmDem+X4DWV4Wmw==
   </data>
  </layer>
+ <imagelayer name="GameOverScreen" visible="0">
+  <image source="../tilesets/titleScreen/deadScreenAlpha.png" width="1920" height="1080"/>
+  <properties>
+   <property name="STATIC" type="bool" value="true"/>
+  </properties>
+ </imagelayer>
+ <objectgroup name="GameOverButtons" visible="0">
+  <properties>
+   <property name="SUSPENDED" type="bool" value="true"/>
+  </properties>
+  <object id="4" name="QuitButton" gid="819" x="0" y="0" width="640" height="640">
+   <properties>
+    <property name="LATE_POLLING" type="bool" value="true"/>
+    <property name="ON_ALWAYS" value="QuitPos"/>
+   </properties>
+  </object>
+  <object id="5" name="TryAgainButton" gid="818" x="0" y="0" width="640" height="640">
+   <properties>
+    <property name="LATE_POLLING" type="bool" value="true"/>
+    <property name="ON_ALWAYS" value="TryAgainPos"/>
+    <property name="ON_MOUSE" value="PlayCollision"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
