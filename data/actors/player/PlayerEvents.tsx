@@ -33,7 +33,6 @@
   <properties>
    <property name="1" value="CollideDeadly"/>
    <property name="NAME" value="CondDeath"/>
-   <property name="PRIORITY" value="HIGH"/>
    <property name="SUCCESS" value="DieEvent"/>
   </properties>
  </tile>
@@ -48,7 +47,7 @@
   <properties>
    <property name="*=" type="bool" value="true"/>
    <property name="NAME" value="MultiplySpeed"/>
-   <property name="VALUE" type="float" value="0.005"/>
+   <property name="VALUE" type="float" value="0.003"/>
    <property name="VAL_NAME" value="REL_SPEED"/>
   </properties>
  </tile>
@@ -282,7 +281,7 @@
    <property name="ANIMATION_TYPE" value="JUMP"/>
    <property name="GAME_FRAMES" type="int" value="1"/>
    <property name="NAME" value="AnimJump"/>
-   <property name="SPEED" type="float" value="5"/>
+   <property name="SPEED" type="float" value="3"/>
    <property name="STOP_ON_LAST_FRAME" type="bool" value="true"/>
   </properties>
  </tile>
@@ -291,7 +290,7 @@
    <property name="ANIMATION_TYPE" value="FALL"/>
    <property name="GAME_FRAMES" type="int" value="1"/>
    <property name="NAME" value="AnimFall"/>
-   <property name="SPEED" type="float" value="5"/>
+   <property name="SPEED" type="float" value="1"/>
    <property name="STOP_ON_LAST_FRAME" type="bool" value="true"/>
   </properties>
  </tile>
@@ -332,6 +331,16 @@
    <property name="4" value="CalcSpeed"/>
    <property name="5" value="CondCompleteAnim"/>
    <property name="NAME" value="Physics"/>
+  </properties>
+ </tile>
+ <tile id="90" type="AeSpawnActor">
+  <properties>
+   <property name="ACTOR_NAME" value="Samuel"/>
+   <property name="LAYER_NAME" value="MainActors"/>
+   <property name="NAME" value="SpawnDouble"/>
+   <property name="SPAWN_NAME" value="MiniSamuel"/>
+   <property name="X_POS" type="int" value="200"/>
+   <property name="Y_POS" type="int" value="-40"/>
   </properties>
  </tile>
 </tileset>

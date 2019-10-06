@@ -212,7 +212,9 @@
  </tile>
  <tile id="41" type="KEY_MAPPING">
   <properties>
-   <property name="KEYPRESS" value="x"/>
+   <property name="DOWN" type="bool" value="true"/>
+   <property name="EVENT" value="SpawnDouble"/>
+   <property name="KEYPRESS" value="b"/>
   </properties>
  </tile>
  <tile id="42" type="KEY_MAPPING">

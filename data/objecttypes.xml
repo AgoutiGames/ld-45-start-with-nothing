@@ -157,6 +157,15 @@
   <property name="PRIORITY" type="string" default="MEDIUM"/>
   <property name="SIGNAL" type="string" default="NEXT"/>
  </objecttype>
+ <objecttype name="AeSpawnActor" color="#a0a0a4">
+  <property name="ACTOR_NAME" type="string"/>
+  <property name="LAYER_NAME" type="string"/>
+  <property name="NAME" type="string"/>
+  <property name="PRIORITY" type="string" default="MEDIUM"/>
+  <property name="SPAWN_NAME" type="string"/>
+  <property name="X_POS" type="int" default="0"/>
+  <property name="Y_POS" type="int" default="0"/>
+ </objecttype>
  <objecttype name="AeSpawnText" color="#a0a0a4">
   <property name="BOLD" type="bool" default="false"/>
   <property name="CENTER_ORIGIN" type="bool" default="true"/>

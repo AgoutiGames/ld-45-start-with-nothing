@@ -3,7 +3,7 @@
  <image source="flame.png" width="896" height="1024"/>
  <tile id="0">
   <objectgroup draworder="index">
-   <object id="1" name="Deadly" x="8" y="73" width="106" height="55"/>
+   <object id="1" name="Deadly" x="8" y="118" width="106" height="10"/>
   </objectgroup>
   <animation>
    <frame tileid="1" duration="41"/>

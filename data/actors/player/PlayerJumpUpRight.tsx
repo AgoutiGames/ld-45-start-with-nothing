@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="PlayerJumpUpRight" tilewidth="256" tileheight="256" tilecount="64" columns="8">
- <image source="jumpUpwardRight.png" width="2048" height="2048"/>
+<tileset name="PlayerJumpUpRight" tilewidth="256" tileheight="256" tilecount="40" columns="8">
+ <image source="jumpUpwardRight.png" width="2048" height="1280"/>
  <tile id="0" type="ACTOR_ANIMATION">
   <properties>
    <property name="ACTOR_NAME" value="Samuel"/>
@@ -48,26 +48,6 @@
    <frame tileid="37" duration="41"/>
    <frame tileid="38" duration="41"/>
    <frame tileid="39" duration="41"/>
-   <frame tileid="40" duration="41"/>
-   <frame tileid="41" duration="41"/>
-   <frame tileid="42" duration="41"/>
-   <frame tileid="43" duration="41"/>
-   <frame tileid="44" duration="41"/>
-   <frame tileid="45" duration="41"/>
-   <frame tileid="46" duration="41"/>
-   <frame tileid="47" duration="41"/>
-   <frame tileid="48" duration="41"/>
-   <frame tileid="49" duration="41"/>
-   <frame tileid="50" duration="41"/>
-   <frame tileid="51" duration="41"/>
-   <frame tileid="52" duration="41"/>
-   <frame tileid="53" duration="41"/>
-   <frame tileid="54" duration="41"/>
-   <frame tileid="55" duration="41"/>
-   <frame tileid="56" duration="41"/>
-   <frame tileid="57" duration="41"/>
-   <frame tileid="58" duration="41"/>
-   <frame tileid="59" duration="41"/>
   </animation>
  </tile>
 </tileset>

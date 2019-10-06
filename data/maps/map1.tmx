@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="3">
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="4">
  <properties>
   <property name="EVENTS1" type="file" value="../actors/player/PlayerEvents.tsx"/>
+  <property name="EVENTS2" type="file" value="../actors/tentacleMonster/MonsterEvents.tsx"/>
   <property name="KEYS1" type="file" value="../actors/player/PlayerControl.tsx"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/Stone.tsx"/>
  <tileset firstgid="16" source="../tilesets/Flame.tsx"/>
  <tileset firstgid="72" source="../actors/player/PlayerSymbolic.tsx"/>
- <tileset firstgid="73" source="../actors/player/PlayerIdleLeft.tsx"/>
- <tileset firstgid="74" source="../actors/player/PlayerIdleRight.tsx"/>
- <tileset firstgid="75" source="../actors/player/PlayerJumpUpLeft.tsx"/>
- <tileset firstgid="139" source="../actors/player/PlayerJumpUpRight.tsx"/>
- <tileset firstgid="203" source="../actors/player/PlayerWalkLeft.tsx"/>
- <tileset firstgid="267" source="../actors/player/PlayerWalkRight.tsx"/>
- <tileset firstgid="331" source="../actors/player/PlayerJumpDownLeft.tsx"/>
- <tileset firstgid="395" source="../actors/player/PlayerJumpDownRight.tsx"/>
- <tileset firstgid="459" source="../actors/player/PlayerFallLeft.tsx"/>
- <tileset firstgid="523" source="../actors/player/PlayerFallRight.tsx"/>
- <tileset firstgid="587" source="../actors/player/PlayerDieRight.tsx"/>
- <tileset firstgid="617" source="../actors/player/PlayerDieLeft.tsx"/>
- <layer name="DontThrowOutMyActorTilesets!" width="90" height="15" visible="0">
+ <tileset firstgid="73" source="../actors/player/PlayerWalkLeft.tsx"/>
+ <tileset firstgid="137" source="../actors/player/PlayerWalkRight.tsx"/>
+ <tileset firstgid="201" source="../actors/player/PlayerJumpDownLeft.tsx"/>
+ <tileset firstgid="265" source="../actors/player/PlayerJumpDownRight.tsx"/>
+ <tileset firstgid="329" source="../actors/player/PlayerFallLeft.tsx"/>
+ <tileset firstgid="393" source="../actors/player/PlayerFallRight.tsx"/>
+ <tileset firstgid="457" source="../actors/player/PlayerDieRight.tsx"/>
+ <tileset firstgid="487" source="../actors/player/PlayerDieLeft.tsx"/>
+ <tileset firstgid="517" name="hexTiles" tilewidth="128" tileheight="128" tilecount="40" columns="5">
+  <image source="../../../../../Bilder/game_test/hexTiles.png" width="640" height="1024"/>
+ </tileset>
+ <tileset firstgid="557" source="../actors/player/PlayerIdleLeft.tsx"/>
+ <tileset firstgid="587" source="../actors/player/PlayerIdleRight.tsx"/>
+ <tileset firstgid="617" source="../actors/tentacleMonster/MonsterWalkLeft.tsx"/>
+ <tileset firstgid="647" source="../actors/tentacleMonster/MonsterWalkRight.tsx"/>
+ <tileset firstgid="677" source="../actors/tentacleMonster/MonsterSymbolic.tsx"/>
+ <tileset firstgid="678" source="../actors/player/PlayerJumpUpLeft.tsx"/>
+ <tileset firstgid="718" source="../actors/player/PlayerJumpUpRight.tsx"/>
+ <layer name="DontThrowOutMyActorTilesets!" width="90" height="15" visible="0" locked="1">
   <data encoding="base64" compression="zlib">
-   eJztzrENwCAAxMAPLZMldGzBLIxGx0TxEJEo4pPcO5Gkb930UKdJm+qVNJq0qJZkUCtHVyVJkiRJ0k+9qtwEuA==
-  </data>
- </layer>
- <layer name="Flames" width="90" height="15" offsetx="0" offsety="-51">
-  <data encoding="base64" compression="zlib">
-   eJzt0DENAAAIBLGXgH+1TAwoICGtgsslAMCo64DHvL3lPwAAbA1xtgAx
+   eJztzLENwCAQBMHjM4qhEIvEbbgSi0bohcRt0IZPcuCEkHBH2uSlewkA9iohVdfd407fmhsuJ+lwzU030re54t/fsXgKAAAAAACw0Qs//Qcb
   </data>
  </layer>
  <objectgroup name="MainActors">
-  <object id="1" name="PLAYER" gid="72" x="243" y="457" width="256" height="256"/>
+  <object id="1" name="PLAYER" gid="72" x="2629.06" y="244.879" width="256" height="256"/>
+  <object id="3" name="Paul" gid="677" x="4478" y="1230" width="384" height="384"/>
  </objectgroup>
+ <layer name="Flames" width="90" height="15" offsetx="0" offsety="-51">
+  <data encoding="base64" compression="zlib">
+   eJzt0cEJADAIA0BHcP9ppRv0F5E7yD8kVcDT6QLH2HMPXwAAQE5/BMgYNeMAwQ==
+  </data>
+ </layer>
  <layer name="GroundLayer" width="90" height="15">
   <data encoding="base64" compression="zlib">
-   eJztlEEKgDAQxAatVsX/v9cV6UWKFOlasAnkvoRhJfiCwRxbH9EB0VxaH9EBZ+dV7NqbYO7mJHbtSWo7i117ktpuun4I/9qHmJFd1yfXmd71eep8743vLemMiIj4Vw9i9Q40
+   eJztl+EOgyAMhLspc5vs/V93LErW1B4W5xJQLrk/GiF8HKUORDTs6Dstddt5jjO5D/bBrnH+K89H8DX4aeA8zmN4MFYv3h/RGs+esUA80V5onKVkvi3f1C6ez46m7L1omUFpR3q2LcxG+u6nn+c7ungmc9YbWclsW7MZ9/Ms+uXsavfbGWrAFq3xudBUE6I79q5xtmuNj2QZazG6GxtnXRo/nllUh1Fflqq58mwgd+Bb+dw6Xgm2sOK9h6Nlv2u5zz5MUr2hpQeX89T4/8PzjDKF1ptSzJyVcU7tqZGzxh2xTkme5Ry+aM+Rt4xdolHNRkyPtPYSmDem+X4DWV4Wmw==
   </data>
  </layer>
 </map>
