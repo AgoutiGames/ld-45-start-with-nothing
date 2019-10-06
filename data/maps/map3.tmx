@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="25">
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="24">
  <properties>
   <property name="EVENTS1" type="file" value="../actors/player/PlayerEvents.tsx"/>
   <property name="EVENTS2" type="file" value="../actors/tentacleMonster/MonsterEvents.tsx"/>
@@ -87,7 +87,6 @@
   <object id="16" name="Trigger3" gid="799" x="1858" y="1072" width="60" height="60"/>
   <object id="18" name="Trigger5" gid="801" x="10944" y="562" width="60" height="60"/>
   <object id="23" name="Trigger4" gid="800" x="5894.24" y="1202.73" width="60" height="60"/>
-  <object id="24" name="NextMap2" gid="802" x="11169.1" y="1878.55" width="60" height="60"/>
  </objectgroup>
  <objectgroup name="TB1" visible="0">
   <object id="11" name="Text1" x="2635.16" y="1306.02" width="409.922" height="251">
