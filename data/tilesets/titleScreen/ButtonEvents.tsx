@@ -29,6 +29,18 @@
    <property name="PATH" type="file" value="../../audio/click.ogg"/>
   </properties>
  </tile>
+ <tile id="5" type="GeChangeMap">
+  <properties>
+   <property name="NAME" value="LoadSecondMap"/>
+   <property name="PATH" type="file" value="../../maps/map2.tmx"/>
+  </properties>
+ </tile>
+ <tile id="6" type="GeChangeMap">
+  <properties>
+   <property name="NAME" value="LoadThirdMap"/>
+   <property name="PATH" type="file" value="../../maps/map3.tmx"/>
+  </properties>
+ </tile>
  <tile id="8" type="AeMulti">
   <properties>
    <property name="1" value="ClickSound"/>
@@ -85,6 +97,38 @@
   <properties>
    <property name="NAME" value="TitleScreenMusic"/>
    <property name="PATH" type="file" value="../../audio/fire-1.ogg"/>
+  </properties>
+ </tile>
+ <tile id="32" type="AeMulti">
+  <properties>
+   <property name="1" value="ClickSound"/>
+   <property name="2" value="SetAnimGreen"/>
+   <property name="3" value="ShortWait"/>
+   <property name="4" value="LoadSecondMap"/>
+   <property name="NAME" value="ClickOnPlay2"/>
+  </properties>
+ </tile>
+ <tile id="33" type="AteSwitch">
+  <properties>
+   <property name="1" value="ClickedOn"/>
+   <property name="NAME" value="PlayCollision2"/>
+   <property name="SUCCESS" value="ClickOnPlay2"/>
+  </properties>
+ </tile>
+ <tile id="42" type="AeMulti">
+  <properties>
+   <property name="1" value="ClickSound"/>
+   <property name="2" value="SetAnimGreen"/>
+   <property name="3" value="ShortWait"/>
+   <property name="4" value="LoadThirdMap"/>
+   <property name="NAME" value="ClickOnPlay3"/>
+  </properties>
+ </tile>
+ <tile id="43" type="AteSwitch">
+  <properties>
+   <property name="1" value="ClickedOn"/>
+   <property name="NAME" value="PlayCollision3"/>
+   <property name="SUCCESS" value="ClickOnPlay3"/>
   </properties>
  </tile>
 </tileset>

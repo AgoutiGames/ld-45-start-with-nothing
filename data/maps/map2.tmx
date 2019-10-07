@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="24">
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="30">
  <properties>
   <property name="EVENTS1" type="file" value="../actors/player/PlayerEvents.tsx"/>
   <property name="EVENTS2" type="file" value="../actors/tentacleMonster/MonsterEvents.tsx"/>
@@ -56,61 +56,64 @@
  </imagelayer>
  <layer name="DontThrowOutMyActorTilesets!" width="90" height="15" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt0LEJgDAQRuFLxMIRtHUSSzs3cBP7LOIuWcPGDaz9wcZGESFE5H3wmhwh4cwAvLF4s83n/sU3ldpLqyY1q0FnQUVVObNeBbWq6I473WmXI3sFAAAZ1cX1rLmZpXrzqVR/AwDgr3Y6LAh5
+   eJzt1sEJACAMA8BCp9D9B+0K+igFvZsgj0ASAQDwvp3TCeDO0lkAONKxmb7jHwrzVgBz
   </data>
  </layer>
  <layer name="BgDecoration" width="90" height="15" offsetx="0" offsety="73">
   <data encoding="base64" compression="zlib">
-   eJzt1dEJACAUAkChySOitZvgfRd1N4EIYgLADXo7nQCAVy0fA5l2UBq6AT61AeKCAh0=
+   eJztwQEBAAAAgiD/r25IQAEAAAAAfBkVGAAB
   </data>
  </layer>
  <objectgroup name="MainActors">
-  <object id="1" name="PLAYER" gid="72" x="2629.06" y="244.879" width="256" height="256"/>
-  <object id="3" name="Paul" gid="637" x="4478" y="1230" width="384" height="384"/>
-  <object id="6" name="Gem1Collectible" gid="787" x="1744" y="1097.33" width="128" height="128"/>
-  <object id="7" name="Gem2Collectible" gid="788" x="11140" y="1396" width="128" height="128"/>
-  <object id="10" name="Paul2" gid="637" x="8666.55" y="1480.12" width="384" height="384"/>
+  <object id="1" name="PLAYER" gid="72" x="132.09" y="257" width="256" height="256"/>
+  <object id="6" name="Gem1Collectible" gid="787" x="100" y="1733.33" width="128" height="128"/>
+  <object id="7" name="Gem2Collectible" gid="788" x="438" y="1736" width="128" height="128"/>
+  <object id="24" name="Hans1" gid="637" x="3556" y="1222" width="384" height="384"/>
+  <object id="26" name="Hans2" gid="637" x="6082" y="1734" width="384" height="384"/>
  </objectgroup>
  <layer name="Flames" width="90" height="15" offsetx="0" offsety="-51">
   <data encoding="base64" compression="zlib">
-   eJzt1cEJACAIheGHE7j/ULZSRDcvnUSJ/wPJo5iiBODw7gI+Qz/n4C8AAHhzcTMB1PAUQIUwadnNzxvWW0+e+6l7sAFGtwRT
+   eJztz8sJACAMRMGQCuy/KD8dmRpE0MMMvPtuBAAAAAD8q2fEqGa18vWat9qlfnDry+nHDXgvBec=
   </data>
  </layer>
  <layer name="GroundLayer" width="90" height="15">
   <data encoding="base64" compression="zlib">
-   eJzNmIsOQiEIhq1O11Pv/7odVyz2B4iKZ7Kx1eYEPm7WNaV0DdRb+pdLsA3SZdNngJ4H+RcZI/oocV6DeKC+BFstgnWwfOPiMbbm1JtDjed90+Omj1TmPLtwzjnenL81/fLIP/fcbanGU8vFbJwP6eM/6omdyRypZqN6hETqldZ+4LmYjbNWT9nnE5yL8v3A7kb7tTaoBjx7cE/hMWax+vYG5yJ8z/Z5vfVylu6YgTPOUslH6l06h2xahOYTzVcvZ6wLSWbhbPkqzUecwfQeapnNyBc5lDhLOxZ3irQbNc7IwpNHr1jvAYoTazhCqA+smYSccS/U3Ml3qBUv7UvKEf+uvQW4fc85ye6IPrN4WJxLvli/NUo1UvLJ40frjBrB2ROPxblU06N82oOz1jst6onH4sz96eWt7QePSkxqdgGXUf+t9HLWYq3lvkd8s3Lmbxrtd0ZNjfX2Vq96fNrDj1L+c67fPTgUqA==
+   eJztl+sOwyAIhe2u3e39X3cly8lIA4qIdtl2En4W4eOindNbp8XOne2w2P1H7Mjyngdz5ud9uzhPnvctxdTuz/kljXOUzyjO02K7CtsH5NEaC4+hB2dpFniPYy8/jP4or2uy1W7ErJRmHblqe7hnbN5zPIyjckHf1s4Gct2CM/WAVOecvIyjckHfWucO2pIzCawt57QwJrukPjt6MvjdmjPOs5zD4/K+s2v70KLbyq/E/VM4U6+V3geIixj34BWlNXfSSM7afGl3tSXWUfLef/gO+y6Kc25XSXWu8SvFOkq5+y9XA3wX/a5rYVnyW/s2aZHlboPWNZC4l/aGtDej/62s/1LoZy0mr2l96O0XqfdLnHNvpKg8W95qERZdt1yOGucnHgkPvg==
   </data>
  </layer>
- <objectgroup name="TextboxTriggers" visible="0">
-  <object id="12" name="Trigger1" gid="797" x="2728" y="1646" width="60" height="60"/>
-  <object id="14" name="Trigger2" gid="798" x="3426" y="1064" width="60" height="60"/>
-  <object id="16" name="Trigger3" gid="799" x="1858" y="1072" width="60" height="60"/>
-  <object id="18" name="Trigger5" gid="801" x="10944" y="562" width="60" height="60"/>
-  <object id="23" name="Trigger4" gid="800" x="5894.24" y="1202.73" width="60" height="60"/>
+ <objectgroup name="TextboxTriggers">
+  <object id="12" name="Trigger1" gid="797" x="303.758" y="1709.64" width="60" height="60"/>
+  <object id="14" name="Trigger2" gid="798" x="3663.94" y="1724.24" width="60" height="60"/>
+  <object id="16" name="Trigger3" gid="799" x="6518" y="442" width="60" height="60"/>
+  <object id="18" name="Trigger5" gid="801" x="10541" y="445" width="60" height="60"/>
+  <object id="23" name="Trigger4" gid="800" x="8038.24" y="1592.73" width="60" height="60"/>
+  <object id="27" name="LoadMap3Trigger1" gid="803" x="10891.4" y="1913.39" width="60" height="60"/>
+  <object id="28" name="LoadMap3Trigger2" gid="803" x="10986" y="1914" width="60" height="60"/>
+  <object id="29" name="LoadMap3Trigger3" gid="803" x="11077.3" y="1913.33" width="60" height="60"/>
  </objectgroup>
  <objectgroup name="TB1" visible="0">
-  <object id="11" name="Text1" x="2635.16" y="1306.02" width="409.922" height="251">
-   <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">Where am I? What happened to me? This place, it looks so unreal. Better take care so I don't get hurt.</text>
+  <object id="11" name="Text1" x="178.766" y="1414.75" width="409.922" height="251">
+   <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">These caves make me sick. Hopefully I get out soon. For this next jump I gotta go full speed.</text>
   </object>
  </objectgroup>
  <objectgroup name="TB2" visible="0">
-  <object id="13" name="Text2" x="3415.04" y="876.5" width="351.922" height="183">
-   <text fontfamily="Sans Serif" pixelsize="32" wrap="1" color="#ffff00">What is this thing? It really looks nasty. Better get something to defend myself.</text>
+  <object id="13" name="Text2" x="3615.52" y="1580.74" width="280.164" height="79.9697">
+   <text fontfamily="Sans Serif" pixelsize="32" wrap="1" color="#ffff00">Oh Shit! Spikes!</text>
   </object>
  </objectgroup>
  <objectgroup name="TB3" visible="0">
-  <object id="15" name="Text3" x="1393.04" y="812.5" width="441.922" height="265">
-   <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">I feel a sound resonating with my body. Now I can defend myself. (Press 1 to attack)</text>
+  <object id="15" name="Text3" x="6659.04" y="236.5" width="355.922" height="265">
+   <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">Gotta be careful. I'm sure someone's waiting for me down there.</text>
   </object>
  </objectgroup>
- <objectgroup name="TB4" visible="0">
-  <object id="22" name="Text4" x="5836.74" y="978.136" width="332.589" height="219.485">
-   <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">Better be careful, I really don't want to die in this hellhole.</text>
+ <objectgroup name="TB4">
+  <object id="22" name="Text4" x="7966.74" y="1424.14" width="268.589" height="103.485">
+   <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">Not again!</text>
   </object>
  </objectgroup>
  <objectgroup name="TB5" visible="0">
-  <object id="20" name="Text5" x="10779" y="384.5" width="265.922" height="171">
-   <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">This doesn't look safe...</text>
+  <object id="20" name="Text5" x="10659" y="292.5" width="265.922" height="171">
+   <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">And here we go again...</text>
   </object>
  </objectgroup>
  <imagelayer name="GameOverScreen" visible="0">
@@ -133,7 +136,7 @@
    <properties>
     <property name="LATE_POLLING" type="bool" value="true"/>
     <property name="ON_ALWAYS" value="TryAgainPos"/>
-    <property name="ON_MOUSE" value="PlayCollision"/>
+    <property name="ON_MOUSE" value="PlayCollision2"/>
    </properties>
   </object>
  </objectgroup>
