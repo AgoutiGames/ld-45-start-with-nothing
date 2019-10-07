@@ -4,7 +4,7 @@
  <tile id="0" type="GeChangeMap">
   <properties>
    <property name="NAME" value="load_map"/>
-   <property name="PATH" type="file" value="maps/title_screen.tmx"/>
+   <property name="PATH" type="file" value="maps/map3.tmx"/>
   </properties>
  </tile>
 </tileset>
