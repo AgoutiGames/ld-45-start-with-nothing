@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="1920" tileheight="1080" infinite="0" nextobjectid="6">
+ <properties>
+  <property name="EVENTS1" type="file" value="Map1Events.tsx"/>
+  <property name="ON_LOAD" value="EndMusic"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/Ending.tsx"/>
+ <tileset firstgid="2" source="../tilesets/TextboxTriggers.tsx"/>
+ <tileset firstgid="102" source="../tilesets/Credits.tsx"/>
+ <layer name="BG" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgAAAACAAC
+  </data>
+ </layer>
+ <objectgroup name="Trigger" visible="0">
+  <object id="5" name="TheEnd" gid="10" x="957.879" y="623.939" width="60" height="60"/>
+ </objectgroup>
+ <objectgroup name="TB1" visible="0">
+  <object id="1" name="Text1" x="346.372" y="111.894" width="369.922" height="265">
+   <text fontfamily="Sans Serif" pixelsize="35" wrap="1">Finally you're awake. I was afraid for you. How do you feel now?</text>
+  </object>
+ </objectgroup>
+ <objectgroup name="TB2" visible="0">
+  <object id="2" name="Text2" x="1294.98" y="129.561" width="491.619" height="249.545">
+   <text fontfamily="Sans Serif" pixelsize="32" wrap="1">I was trapped in absolute nothingness. Everything was dark and hostile. My only hope to defend myself were sounds. </text>
+  </object>
+ </objectgroup>
+ <objectgroup name="TB3" visible="0">
+  <object id="3" name="Text3" x="312.009" y="84.5909" width="442.649" height="261.97">
+   <text fontfamily="Sans Serif" pixelsize="35" wrap="1">I've been playing your favorite music for the last few weeks, and I was hoping it would make you come back.</text>
+  </object>
+ </objectgroup>
+ <objectgroup name="TB4" visible="0">
+  <object id="4" name="Text4" x="1326.31" y="174.015" width="421.922" height="195">
+   <text fontfamily="Sans Serif" pixelsize="35" wrap="1">You saved my life, my love...</text>
+  </object>
+ </objectgroup>
+ <layer name="TB5" width="1" height="1" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxLY2BgAAABnABn
+  </data>
+ </layer>
+</map>

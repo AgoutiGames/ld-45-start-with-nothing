@@ -30,7 +30,7 @@
  <tile id="5" type="AeSound">
   <properties>
    <property name="NAME" value="GemSound"/>
-   <property name="PATH" type="file" value="../../audio/PowerUp.ogg"/>
+   <property name="PATH" type="file" value="../../audio/powerUp.ogg"/>
   </properties>
  </tile>
  <tile id="10" type="MeSetVar">

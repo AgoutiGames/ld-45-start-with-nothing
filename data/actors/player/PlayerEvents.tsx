@@ -99,7 +99,7 @@
  <tile id="18" type="AeSound">
   <properties>
    <property name="NAME" value="DeathSound"/>
-   <property name="PATH" type="file" value="../../audio/playerDeathScream.ogg"/>
+   <property name="PATH" type="file" value="../../audio/deathSound.ogg"/>
   </properties>
  </tile>
  <tile id="20" type="AteCollision">

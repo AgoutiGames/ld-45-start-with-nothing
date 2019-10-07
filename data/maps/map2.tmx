@@ -61,7 +61,7 @@
  </layer>
  <layer name="BgDecoration" width="90" height="15" offsetx="0" offsety="73">
   <data encoding="base64" compression="zlib">
-   eJztwQEBAAAAgiD/r25IQAEAAAAAfBkVGAAB
+   eJzt0sEJACAQBLEFOxcRy7aMOzGpYB6TAAAAHe1RXcDLjn/41Gz4/mrYBCQXGbMCIQ==
   </data>
  </layer>
  <objectgroup name="MainActors">
@@ -81,7 +81,7 @@
    eJztl+sOwyAIhe2u3e39X3cly8lIA4qIdtl2En4W4eOindNbp8XOne2w2P1H7Mjyngdz5ud9uzhPnvctxdTuz/kljXOUzyjO02K7CtsH5NEaC4+hB2dpFniPYy8/jP4or2uy1W7ErJRmHblqe7hnbN5zPIyjckHf1s4Gct2CM/WAVOecvIyjckHfWucO2pIzCawt57QwJrukPjt6MvjdmjPOs5zD4/K+s2v70KLbyq/E/VM4U6+V3geIixj34BWlNXfSSM7afGl3tSXWUfLef/gO+y6Kc25XSXWu8SvFOkq5+y9XA3wX/a5rYVnyW/s2aZHlboPWNZC4l/aGtDej/62s/1LoZy0mr2l96O0XqfdLnHNvpKg8W95qERZdt1yOGucnHgkPvg==
   </data>
  </layer>
- <objectgroup name="TextboxTriggers">
+ <objectgroup name="TextboxTriggers" visible="0">
   <object id="12" name="Trigger1" gid="797" x="303.758" y="1709.64" width="60" height="60"/>
   <object id="14" name="Trigger2" gid="798" x="3663.94" y="1724.24" width="60" height="60"/>
   <object id="16" name="Trigger3" gid="799" x="6518" y="442" width="60" height="60"/>
@@ -106,7 +106,7 @@
    <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">Gotta be careful. I'm sure someone's waiting for me down there.</text>
   </object>
  </objectgroup>
- <objectgroup name="TB4">
+ <objectgroup name="TB4" visible="0">
   <object id="22" name="Text4" x="7966.74" y="1424.14" width="268.589" height="103.485">
    <text fontfamily="Sans Serif" pixelsize="35" wrap="1" color="#ffff00">Not again!</text>
   </object>

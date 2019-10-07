@@ -64,12 +64,20 @@
    <object id="1" name="Trigger" x="0" y="0" width="60" height="60"/>
   </objectgroup>
  </tile>
- <tile id="7">
+ <tile id="7" type="ACTOR_TEMPLATE">
+  <properties>
+   <property name="ACTOR_NAME" value="EndingTrigger"/>
+   <property name="ON_COLLISION" value="LoadEnding"/>
+  </properties>
   <objectgroup draworder="index">
    <object id="1" name="Trigger" x="0" y="0" width="60" height="60"/>
   </objectgroup>
  </tile>
- <tile id="8">
+ <tile id="8" type="ACTOR_TEMPLATE">
+  <properties>
+   <property name="ACTOR_NAME" value="EndScriptTrigger"/>
+   <property name="ON_ACTIVATION" value="EndScript"/>
+  </properties>
   <objectgroup draworder="index">
    <object id="1" name="Trigger" x="0" y="0" width="60" height="60"/>
   </objectgroup>
@@ -124,6 +132,20 @@
  <tile id="16" type="ACTOR_ANIMATION">
   <properties>
    <property name="ACTOR_NAME" value="Map3Trigger"/>
+   <property name="ANIMATION_TYPE" value="IDLE"/>
+   <property name="DIRECTION" value="DOWN"/>
+  </properties>
+ </tile>
+ <tile id="17" type="ACTOR_ANIMATION">
+  <properties>
+   <property name="ACTOR_NAME" value="EndingTrigger"/>
+   <property name="ANIMATION_TYPE" value="IDLE"/>
+   <property name="DIRECTION" value="DOWN"/>
+  </properties>
+ </tile>
+ <tile id="18" type="ACTOR_ANIMATION">
+  <properties>
+   <property name="ACTOR_NAME" value="EndScriptTrigger"/>
    <property name="ANIMATION_TYPE" value="IDLE"/>
    <property name="DIRECTION" value="DOWN"/>
   </properties>

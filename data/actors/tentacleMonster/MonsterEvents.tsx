@@ -71,13 +71,13 @@
  <tile id="23" type="AeSound">
   <properties>
    <property name="NAME" value="MonsterHitSound"/>
-   <property name="PATH" type="file" value="../../audio/dumbHit.ogg"/>
+   <property name="PATH" type="file" value="../../audio/monsterHit.ogg"/>
   </properties>
  </tile>
  <tile id="24" type="AeSound">
   <properties>
    <property name="NAME" value="MonsterDeathSound"/>
-   <property name="PATH" type="file" value="../../audio/hardHit.ogg"/>
+   <property name="PATH" type="file" value="../../audio/monsterDeath.ogg"/>
   </properties>
  </tile>
  <tile id="25" type="AeMulti">

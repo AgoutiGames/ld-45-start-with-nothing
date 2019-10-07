@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="31">
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="right-down" width="90" height="15" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#4b4b4b" nextobjectid="34">
  <properties>
   <property name="EVENTS1" type="file" value="../actors/player/PlayerEvents.tsx"/>
   <property name="EVENTS2" type="file" value="../actors/tentacleMonster/MonsterEvents.tsx"/>
@@ -36,6 +36,7 @@
  <tileset firstgid="793" source="../tilesets/Marker.tsx"/>
  <tileset firstgid="797" source="../tilesets/TextboxTriggers.tsx"/>
  <tileset firstgid="897" source="../tilesets/Decoration.tsx"/>
+ <tileset firstgid="905" source="../tilesets/Door.tsx"/>
  <imagelayer name="BG3">
   <image source="../tilesets/bgVF2.png" width="3000" height="1080"/>
   <properties>
@@ -61,7 +62,7 @@
  </layer>
  <layer name="BgDecoration" width="90" height="15" offsetx="0" offsety="73">
   <data encoding="base64" compression="zlib">
-   eJztwQEBAAAAgiD/r25IQAEAAAAAfBkVGAAB
+   eJzt1sEJACAMBMGAlasPsWsbyFMRwkwFB/fZCAAqWe33AgAAuG8knbsftG/X0yVNv5I4BbECpg==
   </data>
  </layer>
  <objectgroup name="MainActors">
@@ -96,6 +97,7 @@
   <object id="16" name="Trigger3" gid="799" x="2008" y="1222" width="60" height="60"/>
   <object id="18" name="Trigger5" gid="801" x="10902.7" y="1602" width="60" height="60"/>
   <object id="23" name="Trigger4" gid="800" x="7460.24" y="834.73" width="60" height="60"/>
+  <object id="32" name="TriggerEnd" gid="804" x="11322" y="1603.33" width="60" height="60"/>
  </objectgroup>
  <objectgroup name="TB1" visible="0">
   <object id="11" name="Text1" x="389.16" y="192.02" width="409.922" height="251">
